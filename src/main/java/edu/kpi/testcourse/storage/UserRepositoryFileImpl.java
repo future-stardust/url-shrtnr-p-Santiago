@@ -52,7 +52,7 @@ public class UserRepositoryFileImpl implements UserRepository {
   }
 
   private static Map<String, User> readUsersFromJsonDatabaseFile(
-      JsonTool jsonTool, Path sourceFilePath
+    JsonTool jsonTool, Path sourceFilePath
   ) {
     String json;
     try {
@@ -69,7 +69,7 @@ public class UserRepositoryFileImpl implements UserRepository {
   }
 
   private static void writeUsersToJsonDatabaseFile(
-      JsonTool jsonTool, Map<String, User> users, Path destinationFilePath
+    JsonTool jsonTool, Map<String, User> users, Path destinationFilePath
   ) {
     String json = jsonTool.toJson(users);
     try {
